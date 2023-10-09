@@ -21,7 +21,7 @@ const Category = () => {
               <div className="row">
                 <div className="col-md-6 mb-4">
                   <article className="card article-card article-card-sm h-100">
-                    <a href="article.html">
+                    <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
                       <div className="card-image">
                         <div className="post-info">
                           {" "}
@@ -48,7 +48,10 @@ const Category = () => {
                         </li>
                       </ul>
                       <h2>
-                        <a className="post-title" href="article.html">
+                        <a
+                          className="post-title"
+                          href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                        >
                           Is It Ethical to Travel Now? With That Freedom Comes
                           Responsibility.
                         </a>
@@ -72,7 +75,7 @@ const Category = () => {
                 </div>
                 <div className="col-md-6 mb-4">
                   <article className="card article-card article-card-sm h-100">
-                    <a href="article.html">
+                    <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
                       <div className="card-image">
                         <div className="post-info">
                           {" "}
@@ -98,7 +101,10 @@ const Category = () => {
                         </li>
                       </ul>
                       <h2>
-                        <a className="post-title" href="article.html">
+                        <a
+                          className="post-title"
+                          href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                        >
                           An Experiential Guide to Explore This Kingdom
                         </a>
                       </h2>
@@ -121,7 +127,7 @@ const Category = () => {
                 </div>
                 <div className="col-md-6 mb-4">
                   <article className="card article-card article-card-sm h-100">
-                    <a href="article.html">
+                    <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
                       <div className="card-image">
                         <div className="post-info">
                           {" "}
@@ -148,7 +154,10 @@ const Category = () => {
                         </li>
                       </ul>
                       <h2>
-                        <a className="post-title" href="article.html">
+                        <a
+                          className="post-title"
+                          href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                        >
                           Eight Awesome Places to Visit in Montana This Summer
                         </a>
                       </h2>
@@ -171,7 +180,7 @@ const Category = () => {
                 </div>
                 <div className="col-md-6 mb-4">
                   <article className="card article-card article-card-sm h-100">
-                    <a href="article.html">
+                    <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
                       <div className="card-image">
                         <div className="post-info">
                           {" "}
@@ -199,7 +208,10 @@ const Category = () => {
                         </li>
                       </ul>
                       <h2>
-                        <a className="post-title" href="article.html">
+                        <a
+                          className="post-title"
+                          href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                        >
                           Portugal and France Now Allow Unvaccinated Tourists
                         </a>
                       </h2>
@@ -275,7 +287,7 @@ const Category = () => {
                               <h3>
                                 <a
                                   className="post-title post-title-sm"
-                                  href="article.html"
+                                  href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                                 >
                                   Portugal and France Now Allow Unvaccinated
                                   Tourists
@@ -289,7 +301,7 @@ const Category = () => {
                                 {" "}
                                 <a
                                   className="read-more-btn"
-                                  href="article.html"
+                                  href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                                 >
                                   Read Full Article
                                 </a>
@@ -298,7 +310,7 @@ const Category = () => {
                           </article>
                           <a
                             className="media align-items-center"
-                            href="article.html"
+                            href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                           >
                             <img
                               loading="lazy"
@@ -319,7 +331,7 @@ const Category = () => {
                           </a>
                           <a
                             className="media align-items-center"
-                            href="article.html"
+                            href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                           >
                             {" "}
                             <span className="image-fallback image-fallback-xs">
@@ -337,7 +349,7 @@ const Category = () => {
                           </a>
                           <a
                             className="media align-items-center"
-                            href="article.html"
+                            href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                           >
                             <img
                               loading="lazy"
@@ -358,7 +370,7 @@ const Category = () => {
                           </a>
                           <a
                             className="media align-items-center"
-                            href="article.html"
+                            href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                           >
                             <img
                               loading="lazy"

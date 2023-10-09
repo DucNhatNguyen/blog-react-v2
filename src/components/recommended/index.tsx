@@ -1,3 +1,4 @@
+import logoAuthor from "../../assets/images/author.png";
 function Recommended() {
   return (
     <div className="col-lg-4">
@@ -9,17 +10,17 @@ function Recommended() {
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="https://demo.themefisher.com/reporter/images/author.jpg"
+                  src={logoAuthor}
                   alt="About Me"
                   className="w-100 author-thumb-sm d-block"
                 />
-                <h2 className="widget-title my-3">Hootan Safiyari</h2>
+                <h2 className="widget-title my-3">Mình là Quỳnh!</h2>
                 <p className="mb-3 pb-2">
-                  Hello, I’m Hootan Safiyari. A Content writter, Developer and
-                  Story teller. Working as a Content writter at CoolTech Agency.
-                  Quam nihil …
+                  Hello, I’m Quynh. A data developer, Developer and Story
+                  teller. Working as a Content writter at CoolTech Agency. Quam
+                  nihil …
                 </p>{" "}
-                <a href="about.html" className="btn btn-sm btn-outline-primary">
+                <a href="/about" className="btn btn-sm btn-outline-primary">
                   Know More
                 </a>
               </div>
@@ -53,7 +54,7 @@ function Recommended() {
                             <h3>
                               <a
                                 className="post-title post-title-sm"
-                                href="article.html"
+                                href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                               >
                                 Portugal and France Now Allow Unvaccinated
                                 Tourists
@@ -65,7 +66,10 @@ function Recommended() {
                             </p>
                             <div className="content">
                               {" "}
-                              <a className="read-more-btn" href="article.html">
+                              <a
+                                className="read-more-btn"
+                                href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                              >
                                 Read Full Article
                               </a>
                             </div>
@@ -76,7 +80,7 @@ function Recommended() {
                     return (
                       <a
                         className="media align-items-center"
-                        href="article.html"
+                        href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                       >
                         <img
                           loading="lazy"

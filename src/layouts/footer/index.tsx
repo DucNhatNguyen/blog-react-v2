@@ -4,7 +4,7 @@ function Footer() {
       <div className="container section">
         <div className="row">
           <div className="col-lg-10 mx-auto text-center">
-            <a className="d-inline-block mb-4 pb-2" href="index.html">
+            <a className="d-inline-block mb-4 pb-2" href="/">
               <img
                 decoding="async"
                 className="img-fluid"
@@ -21,7 +21,10 @@ function Footer() {
               </li>
               <li className="nav-item my-0">
                 {" "}
-                <a className="nav-link" href="article.html">
+                <a
+                  className="nav-link"
+                  href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                >
                   Elements
                 </a>
               </li>

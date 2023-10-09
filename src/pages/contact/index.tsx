@@ -7,7 +7,7 @@ function Contact() {
             <div className="col-12">
               <div className="breadcrumbs mb-4">
                 {" "}
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
                 <span className="mx-1">/</span> <a href="#!">Contact</a>
               </div>
             </div>

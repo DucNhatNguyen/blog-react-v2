@@ -1,4 +1,4 @@
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/main-logo.png";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -6,12 +6,14 @@ function Header() {
     <header className="navigation">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light px-0">
-          <a className="navbar-brand order-1 py-0" href="index.html">
+          <a className="navbar-brand order-1 py-0" href="/">
             <img
               decoding="async"
               className="img-fluid"
               src={logo}
               alt="Reporter Hugo"
+              width={250}
+              height={70}
             />
           </a>
           <div className="navbar-actions order-3 ml-0 ml-md-4">

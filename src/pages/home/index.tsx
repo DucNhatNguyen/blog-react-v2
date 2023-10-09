@@ -16,7 +16,7 @@ function Home() {
                     return (
                       <div className="col-12 mb-4">
                         <article className="card article-card">
-                          <a href="article.html">
+                          <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
                             <div className="card-image">
                               <div className="post-info">
                                 {" "}
@@ -45,7 +45,10 @@ function Home() {
                               </li>
                             </ul>
                             <h2 className="h1">
-                              <a className="post-title" href="article.html">
+                              <a
+                                className="post-title"
+                                href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                              >
                                 Bai viet so 1
                               </a>
                             </h2>
@@ -57,7 +60,10 @@ function Home() {
                             </p>
                             <div className="content">
                               {" "}
-                              <a className="read-more-btn" href="article.html">
+                              <a
+                                className="read-more-btn"
+                                href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                              >
                                 Read Full Article
                               </a>
                             </div>
@@ -69,7 +75,7 @@ function Home() {
                   return (
                     <div className="col-md-6 mb-4">
                       <article className="card article-card article-card-sm h-100">
-                        <a href="article.html">
+                        <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
                           <div className="card-image">
                             <div className="post-info">
                               {" "}
@@ -97,7 +103,10 @@ function Home() {
                             </li>
                           </ul>
                           <h2>
-                            <a className="post-title" href="article.html">
+                            <a
+                              className="post-title"
+                              href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                            >
                               An Experiential Guide to Explore This Kingdom
                             </a>
                           </h2>
@@ -108,7 +117,10 @@ function Home() {
                           </p>
                           <div className="content">
                             {" "}
-                            <a className="read-more-btn" href="article.html">
+                            <a
+                              className="read-more-btn"
+                              href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                            >
                               Read Full Article
                             </a>
                           </div>
@@ -145,7 +157,7 @@ function Home() {
                             </li>
                             <li className="page-item active ">
                               {" "}
-                              <a href="index.html" className="page-link">
+                              <a href="/" className="page-link">
                                 1
                               </a>
                             </li>
