@@ -26,6 +26,23 @@ function Recommended() {
               </div>
             </div>
           </div>
+          <div className="col-lg-12">
+            <div className="widget">
+              <div className="widget-body">
+                <div className="widget-list>">
+                  <iframe
+                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvuquynh9999%2Fposts%2F842387673803542%3A842387673803542&show_text=true&width=330"
+                    width="330"
+                    height="390"
+                    style={{ border: "none", overflow: "hidden" }}
+                    frameBorder="0"
+                    allowFullScreen={true}
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="col-lg-12 col-md-6">
             <div className="widget">
               <h2 className="section-title mb-3">Recommended</h2>
