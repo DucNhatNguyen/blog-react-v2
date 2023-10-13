@@ -1,6 +1,63 @@
+import { useEffect, useState } from "react";
 import Recommended from "../../components/recommended";
+import Axios from "axios";
+import Post from "../../components/post";
+import { getDataHomePage } from "../../api/home-page";
+
+interface RequestType {
+  features: [
+    id: String,
+    author: Number,
+    publicdate: String,
+    sortdesc: String,
+    status: Number,
+    thumbnail: String,
+    view: Number,
+    slug: String,
+    title: String,
+    ishotblog: String,
+    createdAt: String,
+    statusname: String,
+    cate: {
+      id: Number;
+      title: String;
+    },
+    author_author: {
+      id: Number;
+      name: String;
+    }
+  ];
+  latestPosts: {
+    posts: [
+      id: String,
+      author: Number,
+      publicdate: String,
+      sortdesc: String,
+      status: Number,
+      thumbnail: String,
+      view: Number,
+      slug: String,
+      title: String,
+      ishotblog: String,
+      createdAt: String,
+      statusname: String,
+      cate: {
+        id: Number;
+        title: String;
+      },
+      author_author: {
+        id: Number;
+        name: String;
+      }
+    ];
+    total: Number;
+  };
+}
 
 function Home() {
+  const [data, setData] = useState<RequestType>();
+  const dataHome = getDataHomePage();
+
   return (
     <main>
       <section className="section">
@@ -11,20 +68,81 @@ function Home() {
             </div>
             <div className="col-lg-8 mb-5 mb-lg-0">
               <div className="row">
-                {new Array(8).fill(1).map((value, index) => {
-                  if (index === 0) {
+                {data &&
+                  data.latestPosts.posts.map((item, index) => {
+                    if (index === 0) {
+                      return (
+                        // <div className="col-12 mb-4" key={index}>
+                        //   <article className="card article-card">
+                        //     <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
+                        //       <div className="card-image">
+                        //         <div className="post-info">
+                        //           {" "}
+                        //           <span className="text-uppercase">
+                        //             04 Jun 2021 {item}
+                        //           </span>
+                        //           <span className="text-uppercase">
+                        //             3 minutes read
+                        //           </span>
+                        //         </div>
+                        //         <img
+                        //           loading="lazy"
+                        //           decoding="async"
+                        //           src={`https://picsum.photos/900/560?random=${index}`}
+                        //           alt="Post Thumbnail"
+                        //           className="w-100"
+                        //         />
+                        //       </div>
+                        //     </a>
+                        //     <div className="card-body px-0 pb-1">
+                        //       <ul className="post-meta mb-2">
+                        //         <li>
+                        //           {" "}
+                        //           <a href="#!">travel</a>
+                        //           <a href="#!">news</a>
+                        //         </li>
+                        //       </ul>
+                        //       <h2 className="h1">
+                        //         <a
+                        //           className="post-title"
+                        //           href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                        //         >
+                        //           Bai viet so 1
+                        //         </a>
+                        //       </h2>
+                        //       <p className="card-text">
+                        //         Heading Here is example of hedings. You can use
+                        //         this heading by following markdownify rules. For
+                        //         example: use # for heading 1 and use ###### for
+                        //         heading 6.
+                        //       </p>
+                        //       <div className="content">
+                        //         {" "}
+                        //         <a
+                        //           className="read-more-btn"
+                        //           href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
+                        //         >
+                        //           Read Full Article
+                        //         </a>
+                        //       </div>
+                        //     </div>
+                        //   </article>
+                        // </div>
+                        <Post data={dataHome} index={index} />
+                      );
+                    }
                     return (
-                      <div className="col-12 mb-4">
-                        <article className="card article-card">
+                      <div className="col-md-6 mb-4">
+                        <article className="card article-card article-card-sm h-100">
                           <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
                             <div className="card-image">
                               <div className="post-info">
                                 {" "}
                                 <span className="text-uppercase">
-                                  04 Jun 2021
+                                  03 Jun 2021
                                 </span>
                                 <span className="text-uppercase">
-                                  3 minutes read
+                                  2 minutes read
                                 </span>
                               </div>
                               <img
@@ -36,27 +154,25 @@ function Home() {
                               />
                             </div>
                           </a>
-                          <div className="card-body px-0 pb-1">
+                          <div className="card-body px-0 pb-0">
                             <ul className="post-meta mb-2">
                               <li>
                                 {" "}
                                 <a href="#!">travel</a>
-                                <a href="#!">news</a>
                               </li>
                             </ul>
-                            <h2 className="h1">
+                            <h2>
                               <a
                                 className="post-title"
                                 href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                               >
-                                Bai viet so 1
+                                An Experiential Guide to Explore This Kingdom
                               </a>
                             </h2>
                             <p className="card-text">
-                              Heading Here is example of hedings. You can use
-                              this heading by following markdownify rules. For
-                              example: use # for heading 1 and use ###### for
-                              heading 6.
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna …
                             </p>
                             <div className="content">
                               {" "}
@@ -71,64 +187,7 @@ function Home() {
                         </article>
                       </div>
                     );
-                  }
-                  return (
-                    <div className="col-md-6 mb-4">
-                      <article className="card article-card article-card-sm h-100">
-                        <a href="/bai-viet/top-7-reasons-to-visit-denver-this-summer">
-                          <div className="card-image">
-                            <div className="post-info">
-                              {" "}
-                              <span className="text-uppercase">
-                                03 Jun 2021
-                              </span>
-                              <span className="text-uppercase">
-                                2 minutes read
-                              </span>
-                            </div>
-                            <img
-                              loading="lazy"
-                              decoding="async"
-                              src={`https://picsum.photos/900/560?random=${index}`}
-                              alt="Post Thumbnail"
-                              className="w-100"
-                            />
-                          </div>
-                        </a>
-                        <div className="card-body px-0 pb-0">
-                          <ul className="post-meta mb-2">
-                            <li>
-                              {" "}
-                              <a href="#!">travel</a>
-                            </li>
-                          </ul>
-                          <h2>
-                            <a
-                              className="post-title"
-                              href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
-                            >
-                              An Experiential Guide to Explore This Kingdom
-                            </a>
-                          </h2>
-                          <p className="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna …
-                          </p>
-                          <div className="content">
-                            {" "}
-                            <a
-                              className="read-more-btn"
-                              href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
-                            >
-                              Read Full Article
-                            </a>
-                          </div>
-                        </div>
-                      </article>
-                    </div>
-                  );
-                })}
+                  })}
                 <div className="col-12">
                   <div className="row">
                     <div className="col-12">
