@@ -1,15 +1,15 @@
 import { PostType } from "../../type/PostType";
 
-interface Props {
+interface IProps {
   data: PostType;
-  index: number;
+  className: string;
 }
 
-const Post: React.FC<Props> = ({ data, index }) => {
+const Post: React.FC<IProps> = ({ data, className }) => {
   return (
-    <div className="col-12 mb-4">
+    <div className={className}>
       <article className="card article-card">
-        <a href={`/bai-viet/${index}`}>
+        <a href={`/bai-viet/${data.slug}`}>
           <div className="card-image">
             <div className="post-info">
               {" "}
@@ -19,7 +19,7 @@ const Post: React.FC<Props> = ({ data, index }) => {
             <img
               loading="lazy"
               decoding="async"
-              src={`https://picsum.photos/900/560?random=${index}`}
+              src={data.thumbnail}
               alt="Post Thumbnail"
               className="w-100"
             />
@@ -34,15 +34,19 @@ const Post: React.FC<Props> = ({ data, index }) => {
             </li>
           </ul>
           <h2 className="h1">
-            <a className="post-title" href={`/bai-viet/${index}`}>
+            <a
+              style={{ textDecoration: "none", fontSize: "25px" }}
+              className="post-title"
+              href={`/bai-viet/${data.slug}`}
+            >
               {data.title}
             </a>
           </h2>
           <p className="card-text">{data.sortdesc}</p>
           <div className="content">
             {" "}
-            <a className="read-more-btn" href={`/bai-viet/${index}`}>
-              Read Full Article
+            <a className="read-more-btn" href={`/bai-viet/${data.slug}`}>
+              Read More <i className="fa fa-angle-double-right"></i>
             </a>
           </div>
         </div>

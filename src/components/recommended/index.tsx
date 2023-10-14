@@ -18,7 +18,7 @@ function Recommended() {
                 <p className="mb-3 pb-2">
                   Hello, I’m Quynh. A data developer, Developer and Story
                   teller. Working as a Content writter at CoolTech Agency. Quam
-                  nihil …
+                  nihiWorking as a Content writter at CoolTech Agency
                 </p>{" "}
                 <a href="/about" className="btn btn-sm btn-outline-primary">
                   Know More
@@ -87,7 +87,8 @@ function Recommended() {
                                 className="read-more-btn"
                                 href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
                               >
-                                Read Full Article
+                                Read more{" "}
+                                <i className="fa fa-angle-double-right"></i>
                               </a>
                             </div>
                           </div>

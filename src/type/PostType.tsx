@@ -1,72 +1,51 @@
 export interface RequestType {
   features: [
-    id: String,
+    id: string,
     author: Number,
-    publicdate: String,
-    sortdesc: String,
+    publicdate: string,
+    sortdesc: string,
     status: Number,
-    thumbnail: String,
+    thumbnail: string,
     view: Number,
-    slug: String,
-    title: String,
-    ishotblog: String,
-    createdAt: String,
-    statusname: String,
+    slug: string,
+    title: string,
+    ishotblog: string,
+    createdAt: string,
+    statusname: string,
     cate: {
       id: Number;
-      title: String;
+      title: string;
     },
     author_author: {
       id: Number;
-      name: String;
+      name: string;
     }
   ];
   latestPosts: {
-    posts: [
-      id: String,
-      author: Number,
-      publicdate: String,
-      sortdesc: String,
-      status: Number,
-      thumbnail: String,
-      view: Number,
-      slug: String,
-      title: String,
-      ishotblog: String,
-      createdAt: String,
-      statusname: String,
-      cate: {
-        id: Number;
-        title: String;
-      },
-      author_author: {
-        id: Number;
-        name: String;
-      }
-    ];
+    posts: [PostType];
     total: Number;
   };
 }
 
 export interface PostType {
-  id: String;
+  id: string;
   author: Number;
-  publicdate: String;
-  sortdesc: String;
+  publicdate: string;
+  sortdesc: string;
   status: Number;
-  thumbnail: String;
+  thumbnail: string;
   view: Number;
-  slug: String;
-  title: String;
-  ishotblog: String;
-  createdAt: String;
-  statusname: String;
+  slug: string;
+  title: string;
+  ishotblog: string;
+  createdAt: string;
+  statusname: string;
   cate: {
     id: Number;
-    title: String;
+    title: string;
   };
   author_author: {
     id: Number;
-    name: String;
+    name: string;
   };
 }
