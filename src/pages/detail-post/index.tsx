@@ -9,7 +9,7 @@ function Detail() {
 
   return (
     <main>
-      <section className="section">
+      <section className="section show">
         <div className="container">
           <Breadcrumbs pathname={location.pathname} />
           <div className="row">

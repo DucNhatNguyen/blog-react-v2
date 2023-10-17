@@ -1,24 +1,13 @@
-import { useEffect, useState } from "react";
+import React from "react";
 import Recommended from "../../components/recommended";
 import Post from "../../components/post";
 import { PostType, RequestType } from "../../type/PostType";
-import http from "../../common/http-common";
 
-function Home() {
-  const [data, setData] = useState<RequestType>();
+interface IProps {
+  data: RequestType | undefined;
+}
 
-  useEffect(() => {
-    http
-      .get<RequestType>("https://blog-nodejs.onrender.com/api/web/home-page")
-      .then(({ data }) => {
-        console.log(data);
-        setData(data);
-      })
-      .catch((e: Error) => {
-        console.log(e);
-      });
-  }, []);
-
+const Home: React.FC<IProps> = ({ data }) => {
   return (
     <main>
       <section className="section">
@@ -116,6 +105,6 @@ function Home() {
       </section>
     </main>
   );
-}
+};
 
 export default Home;
