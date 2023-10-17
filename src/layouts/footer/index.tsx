@@ -1,49 +1,35 @@
+import logo from "../../assets/images/main-logo.png";
 function Footer() {
   return (
     <footer className="bg-dark mt-5">
       <div className="container section">
         <div className="row">
           <div className="col-lg-10 mx-auto text-center">
-            <a className="d-inline-block mb-4 pb-2" href="/">
+            {/* <a className="d-inline-block mb-4 pb-2" href="/">
               <img
                 decoding="async"
                 className="img-fluid"
-                src="images/logo-white.png"
+                src={logo}
                 alt="Reporter Hugo"
               />
-            </a>
+            </a> */}
             <ul className="p-0 d-flex navbar-footer mb-0 list-unstyled">
               <li className="nav-item my-0">
                 {" "}
-                <a className="nav-link" href="about.html">
-                  About
+                <a className="nav-link" href="#!">
+                  Youtube
                 </a>
               </li>
               <li className="nav-item my-0">
                 {" "}
-                <a
-                  className="nav-link"
-                  href="/bai-viet/top-7-reasons-to-visit-denver-this-summer"
-                >
-                  Elements
+                <a className="nav-link" href="#!">
+                  Facebook
                 </a>
               </li>
               <li className="nav-item my-0">
                 {" "}
-                <a className="nav-link" href="privacy-policy.html">
-                  Privacy Policy
-                </a>
-              </li>
-              <li className="nav-item my-0">
-                {" "}
-                <a className="nav-link" href="terms-conditions.html">
-                  Terms Conditions
-                </a>
-              </li>
-              <li className="nav-item my-0">
-                {" "}
-                <a className="nav-link" href="404.html">
-                  404 Page
+                <a className="nav-link" href="#!">
+                  Instagram
                 </a>
               </li>
             </ul>

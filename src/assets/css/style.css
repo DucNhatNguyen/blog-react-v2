@@ -925,13 +925,13 @@ a.post-title-sm:hover {
 .copyright {
   background-color: #0e0e0e !important;
   color: #e8e8e8;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   font-size: 14px;
   text-align: center;
 }
 
 footer .section {
-  padding: 45px 0;
+  /* padding: 45px 0; */
 }
 
 .navbar-footer .nav-link:hover {
