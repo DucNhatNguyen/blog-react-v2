@@ -739,7 +739,7 @@ a.post-title-sm:hover {
 .content a {
   color: inherit !important;
   display: inline;
-  text-decoration: none;
+  /* text-decoration: none; */
   /* background-image: linear-gradient(#3deaa4, #3deaa4); */
   background-position: 0% 110%;
   background-repeat: no-repeat;
